@@ -215,6 +215,9 @@ int main( void ) {
     while( glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS &&
           glfwWindowShouldClose(window) == 0 );
     
+    // Clean up ImGui
+    ImGui_ImplGlfwGL3_Shutdown();
+    
     // Cleanup VBO and shader
     glDeleteBuffers(1, &vertexbuffer);
     glDeleteBuffers(1, &uvbuffer);
