@@ -56,6 +56,20 @@
 		9014246A1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9014243A1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib */; };
 		9014246B1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9014243B1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib */; };
 		9014246C1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9014243C1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib */; };
+		9014246F1DF0976300720E68 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9014246D1DF0976300720E68 /* imgui.cpp */; };
+		9014247B1DF09AD200720E68 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 901424761DF09AD200720E68 /* imgui_demo.cpp */; };
+		9014247D1DF09AD200720E68 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 901424781DF09AD200720E68 /* imgui_draw.cpp */; };
+		901424811DF0A05F00720E68 /* libglfw3.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 901424801DF0A05F00720E68 /* libglfw3.3.2.dylib */; };
+		901424831DF0A08C00720E68 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 901424821DF0A08C00720E68 /* libGLEW.2.0.0.dylib */; };
+		901424851DF0A0BE00720E68 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901424841DF0A0BE00720E68 /* Cocoa.framework */; };
+		901424871DF0A0C400720E68 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901424861DF0A0C400720E68 /* IOKit.framework */; };
+		901424891DF0A0CC00720E68 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901424881DF0A0CC00720E68 /* CoreVideo.framework */; };
+		9014248B1DF0A0D600720E68 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9014248A1DF0A0D600720E68 /* OpenGL.framework */; };
+		901424901DF0A1C700720E68 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9014248C1DF0A1C700720E68 /* shader.cpp */; };
+		901424951DF0A25900720E68 /* simple.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 901424921DF0A24900720E68 /* simple.frag */; };
+		901424961DF0A25900720E68 /* simple.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = 901424931DF0A24900720E68 /* simple.vert */; };
+		9014249A1DF0A58F00720E68 /* video1.mp4 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 901424991DF0A58C00720E68 /* video1.mp4 */; };
+		9014249D1DF0AA9100720E68 /* imgui_impl_glfw_gl3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9014249B1DF0AA9100720E68 /* imgui_impl_glfw_gl3.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,6 +81,18 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		901424941DF0A24E00720E68 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				9014249A1DF0A58F00720E68 /* video1.mp4 in CopyFiles */,
+				901424951DF0A25900720E68 /* simple.frag in CopyFiles */,
+				901424961DF0A25900720E68 /* simple.vert in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -121,6 +147,28 @@
 		9014243A1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.1.0.dylib; path = ../../../../../../usr/local/Cellar/opencv3/3.1.0_3/lib/libopencv_videostab.3.1.0.dylib; sourceTree = "<group>"; };
 		9014243B1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.1.0.dylib; path = ../../../../../../usr/local/Cellar/opencv3/3.1.0_3/lib/libopencv_videostab.3.1.0.dylib; sourceTree = "<group>"; };
 		9014243C1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.1.0.dylib; path = ../../../../../../usr/local/Cellar/opencv3/3.1.0_3/lib/libopencv_videostab.3.1.0.dylib; sourceTree = "<group>"; };
+		9014246D1DF0976300720E68 /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui.cpp; sourceTree = "<group>"; };
+		9014246E1DF0976300720E68 /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui.h; sourceTree = "<group>"; };
+		901424701DF09A5200720E68 /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imconfig.h; sourceTree = "<group>"; };
+		901424721DF09A7400720E68 /* imgui_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_internal.h; sourceTree = "<group>"; };
+		901424731DF09AA700720E68 /* stb_rect_pack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_rect_pack.h; sourceTree = "<group>"; };
+		901424741DF09AA700720E68 /* stb_textedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_textedit.h; sourceTree = "<group>"; };
+		901424751DF09AA700720E68 /* stb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_truetype.h; sourceTree = "<group>"; };
+		901424761DF09AD200720E68 /* imgui_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_demo.cpp; sourceTree = "<group>"; };
+		901424781DF09AD200720E68 /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_draw.cpp; sourceTree = "<group>"; };
+		901424801DF0A05F00720E68 /* libglfw3.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw3/3.2.1/lib/libglfw3.3.2.dylib; sourceTree = "<group>"; };
+		901424821DF0A08C00720E68 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
+		901424841DF0A0BE00720E68 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		901424861DF0A0C400720E68 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		901424881DF0A0CC00720E68 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9014248A1DF0A0D600720E68 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		9014248C1DF0A1C700720E68 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		9014248D1DF0A1C700720E68 /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
+		901424921DF0A24900720E68 /* simple.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = simple.frag; sourceTree = "<group>"; };
+		901424931DF0A24900720E68 /* simple.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = simple.vert; sourceTree = "<group>"; };
+		901424991DF0A58C00720E68 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		9014249B1DF0AA9100720E68 /* imgui_impl_glfw_gl3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_impl_glfw_gl3.cpp; sourceTree = "<group>"; };
+		9014249C1DF0AA9100720E68 /* imgui_impl_glfw_gl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_impl_glfw_gl3.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +176,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9014248B1DF0A0D600720E68 /* OpenGL.framework in Frameworks */,
+				901424891DF0A0CC00720E68 /* CoreVideo.framework in Frameworks */,
+				901424871DF0A0C400720E68 /* IOKit.framework in Frameworks */,
+				901424851DF0A0BE00720E68 /* Cocoa.framework in Frameworks */,
+				901424831DF0A08C00720E68 /* libGLEW.2.0.0.dylib in Frameworks */,
+				901424811DF0A05F00720E68 /* libglfw3.3.2.dylib in Frameworks */,
 				9014243D1DF0927600720E68 /* libopencv_calib3d.3.1.0.dylib in Frameworks */,
 				9014243E1DF0927600720E68 /* libopencv_calib3d.3.1.0.dylib in Frameworks */,
 				9014243F1DF0927600720E68 /* libopencv_calib3d.3.1.0.dylib in Frameworks */,
@@ -202,7 +256,15 @@
 		901424041DF091DB00720E68 /* ImguiPractice */ = {
 			isa = PBXGroup;
 			children = (
+				901424991DF0A58C00720E68 /* video1.mp4 */,
 				901424051DF091DB00720E68 /* main.cpp */,
+				9014249B1DF0AA9100720E68 /* imgui_impl_glfw_gl3.cpp */,
+				9014249C1DF0AA9100720E68 /* imgui_impl_glfw_gl3.h */,
+				901424921DF0A24900720E68 /* simple.frag */,
+				901424931DF0A24900720E68 /* simple.vert */,
+				9014248C1DF0A1C700720E68 /* shader.cpp */,
+				9014248D1DF0A1C700720E68 /* shader.hpp */,
+				901424711DF09A5A00720E68 /* imgui */,
 			);
 			path = ImguiPractice;
 			sourceTree = "<group>";
@@ -210,6 +272,12 @@
 		9014240C1DF0927600720E68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9014248A1DF0A0D600720E68 /* OpenGL.framework */,
+				901424881DF0A0CC00720E68 /* CoreVideo.framework */,
+				901424861DF0A0C400720E68 /* IOKit.framework */,
+				901424841DF0A0BE00720E68 /* Cocoa.framework */,
+				901424821DF0A08C00720E68 /* libGLEW.2.0.0.dylib */,
+				901424801DF0A05F00720E68 /* libglfw3.3.2.dylib */,
 				9014240D1DF0927600720E68 /* libopencv_calib3d.3.1.0.dylib */,
 				9014240E1DF0927600720E68 /* libopencv_calib3d.3.1.0.dylib */,
 				9014240F1DF0927600720E68 /* libopencv_calib3d.3.1.0.dylib */,
@@ -262,6 +330,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		901424711DF09A5A00720E68 /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				901424761DF09AD200720E68 /* imgui_demo.cpp */,
+				901424781DF09AD200720E68 /* imgui_draw.cpp */,
+				901424731DF09AA700720E68 /* stb_rect_pack.h */,
+				901424741DF09AA700720E68 /* stb_textedit.h */,
+				901424751DF09AA700720E68 /* stb_truetype.h */,
+				901424721DF09A7400720E68 /* imgui_internal.h */,
+				901424701DF09A5200720E68 /* imconfig.h */,
+				9014246D1DF0976300720E68 /* imgui.cpp */,
+				9014246E1DF0976300720E68 /* imgui.h */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,6 +356,7 @@
 				901423FE1DF091DA00720E68 /* Sources */,
 				901423FF1DF091DA00720E68 /* Frameworks */,
 				901424001DF091DA00720E68 /* CopyFiles */,
+				901424941DF0A24E00720E68 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -320,7 +405,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901424901DF0A1C700720E68 /* shader.cpp in Sources */,
 				901424061DF091DB00720E68 /* main.cpp in Sources */,
+				9014249D1DF0AA9100720E68 /* imgui_impl_glfw_gl3.cpp in Sources */,
+				9014246F1DF0976300720E68 /* imgui.cpp in Sources */,
+				9014247B1DF09AD200720E68 /* imgui_demo.cpp in Sources */,
+				9014247D1DF09AD200720E68 /* imgui_draw.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,10 +508,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 8Y439RUF7P;
-				HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/opt/opencv3/include,
+					/usr/local/opt/glew/include,
+					/usr/local/opt/glfw3/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/opencv3/3.1.0_3/lib,
+					/usr/local/Cellar/glfw3/3.2.1/lib,
+					/usr/local/Cellar/glew/2.0.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -431,10 +527,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 8Y439RUF7P;
-				HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/opt/opencv3/include,
+					/usr/local/opt/glew/include,
+					/usr/local/opt/glfw3/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/opencv3/3.1.0_3/lib,
+					/usr/local/Cellar/glfw3/3.2.1/lib,
+					/usr/local/Cellar/glew/2.0.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
