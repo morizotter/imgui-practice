@@ -56,6 +56,7 @@
 		9014246A1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9014243A1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib */; };
 		9014246B1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9014243B1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib */; };
 		9014246C1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9014243C1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib */; };
+		9014246F1DF0976300720E68 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9014246D1DF0976300720E68 /* imgui.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -121,6 +122,8 @@
 		9014243A1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.1.0.dylib; path = ../../../../../../usr/local/Cellar/opencv3/3.1.0_3/lib/libopencv_videostab.3.1.0.dylib; sourceTree = "<group>"; };
 		9014243B1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.1.0.dylib; path = ../../../../../../usr/local/Cellar/opencv3/3.1.0_3/lib/libopencv_videostab.3.1.0.dylib; sourceTree = "<group>"; };
 		9014243C1DF0927600720E68 /* libopencv_videostab.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.1.0.dylib; path = ../../../../../../usr/local/Cellar/opencv3/3.1.0_3/lib/libopencv_videostab.3.1.0.dylib; sourceTree = "<group>"; };
+		9014246D1DF0976300720E68 /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui.cpp; sourceTree = "<group>"; };
+		9014246E1DF0976300720E68 /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				901424051DF091DB00720E68 /* main.cpp */,
+				9014246D1DF0976300720E68 /* imgui.cpp */,
+				9014246E1DF0976300720E68 /* imgui.h */,
 			);
 			path = ImguiPractice;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				901424061DF091DB00720E68 /* main.cpp in Sources */,
+				9014246F1DF0976300720E68 /* imgui.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

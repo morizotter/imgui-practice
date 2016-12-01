@@ -9,6 +9,7 @@
 #include <iostream>
 #include <string>
 #include <opencv2/opencv.hpp>
+#include "imgui.h"
 
 using namespace std;
 using namespace cv;
