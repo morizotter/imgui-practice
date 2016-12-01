@@ -14,11 +14,6 @@
 using namespace std;
 using namespace cv;
 
-void onMouse( int event, int x, int y, int flag, void* )
-{
-    
-}
-
 string win_name = "Window";
 
 int main(int argc, const char * argv[]) {
@@ -31,7 +26,7 @@ int main(int argc, const char * argv[]) {
         Mat frame;
         cap >> frame;
         
-        imshow("Window", frame);
+        imshow(win_name, frame);
         
         int key = waitKey(1);
         if(key==27) {
