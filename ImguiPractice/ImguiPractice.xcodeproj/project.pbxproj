@@ -69,6 +69,7 @@
 		901424951DF0A25900720E68 /* simple.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 901424921DF0A24900720E68 /* simple.frag */; };
 		901424961DF0A25900720E68 /* simple.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = 901424931DF0A24900720E68 /* simple.vert */; };
 		9014249A1DF0A58F00720E68 /* video1.mp4 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 901424991DF0A58C00720E68 /* video1.mp4 */; };
+		9014249D1DF0AA9100720E68 /* imgui_impl_glfw_gl3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9014249B1DF0AA9100720E68 /* imgui_impl_glfw_gl3.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -166,6 +167,8 @@
 		901424921DF0A24900720E68 /* simple.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = simple.frag; sourceTree = "<group>"; };
 		901424931DF0A24900720E68 /* simple.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = simple.vert; sourceTree = "<group>"; };
 		901424991DF0A58C00720E68 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		9014249B1DF0AA9100720E68 /* imgui_impl_glfw_gl3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_impl_glfw_gl3.cpp; sourceTree = "<group>"; };
+		9014249C1DF0AA9100720E68 /* imgui_impl_glfw_gl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_impl_glfw_gl3.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +258,8 @@
 			children = (
 				901424991DF0A58C00720E68 /* video1.mp4 */,
 				901424051DF091DB00720E68 /* main.cpp */,
+				9014249B1DF0AA9100720E68 /* imgui_impl_glfw_gl3.cpp */,
+				9014249C1DF0AA9100720E68 /* imgui_impl_glfw_gl3.h */,
 				901424921DF0A24900720E68 /* simple.frag */,
 				901424931DF0A24900720E68 /* simple.vert */,
 				9014248C1DF0A1C700720E68 /* shader.cpp */,
@@ -402,6 +407,7 @@
 			files = (
 				901424901DF0A1C700720E68 /* shader.cpp in Sources */,
 				901424061DF091DB00720E68 /* main.cpp in Sources */,
+				9014249D1DF0AA9100720E68 /* imgui_impl_glfw_gl3.cpp in Sources */,
 				9014246F1DF0976300720E68 /* imgui.cpp in Sources */,
 				9014247B1DF09AD200720E68 /* imgui_demo.cpp in Sources */,
 				9014247D1DF09AD200720E68 /* imgui_draw.cpp in Sources */,

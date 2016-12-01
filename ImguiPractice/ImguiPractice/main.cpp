@@ -12,6 +12,7 @@
 #include <GLFW/glfw3.h>
 #include <opencv2/opencv.hpp>
 #include "imgui.h"
+#include "imgui_impl_glfw_gl3.h"
 
 using namespace std;
 using namespace cv;
@@ -75,6 +76,11 @@ int main( void ) {
     // Ensure we can capture the escape key being pressed below
     glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
     
+    // Setup ImGui binding
+    ImGui_ImplGlfwGL3_Init(window, true);
+    bool show_another_window = false;
+    float slider_f = 0.0;
+    
     // Dark blue background
     glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
     
@@ -84,7 +90,6 @@ int main( void ) {
     
     GLuint programID = LoadShaders(vertex_file_name, fragment_file_name);
     
-    // テクスチャを準備する
     GLuint Texture;
     glGenTextures(1, &Texture);
     glBindTexture(GL_TEXTURE_RECTANGLE, Texture);
@@ -180,6 +185,27 @@ int main( void ) {
         
         glDisableVertexAttribArray(0);
         glDisableVertexAttribArray(1);
+        
+        ImGui_ImplGlfwGL3_NewFrame();
+        
+        {
+            ImGui::Begin("First Window");
+            ImGui::Text("Hello, world!");
+            ImGui::SliderFloat("float", &slider_f, 0.0f, 1.0f);
+            if (ImGui::Button("Another Window")) show_another_window ^= 1;
+            ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
+            ImGui::End();
+        }
+        
+        if (show_another_window)
+        {
+            ImGui::SetNextWindowSize(ImVec2(200,100), ImGuiSetCond_FirstUseEver);
+            ImGui::Begin("Another Window", &show_another_window);
+            ImGui::Text("Hello");
+            ImGui::End();
+        }
+        
+        ImGui::Render();
         
         // Swap buffers
         glfwSwapBuffers(window);
