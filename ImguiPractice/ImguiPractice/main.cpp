@@ -127,8 +127,16 @@ int main( void ) {
     glGenBuffers(1, &uvbuffer);
     glBindBuffer(GL_ARRAY_BUFFER, uvbuffer);
     glBufferData(GL_ARRAY_BUFFER, sizeof(g_uv_buffer_data), g_uv_buffer_data, GL_STATIC_DRAW);
+
+    glEnableVertexAttribArray(0);
+    glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
     
-    do{
+    glEnableVertexAttribArray(1);
+    glBindBuffer(GL_ARRAY_BUFFER, uvbuffer);
+    glVertexAttribPointer(1, 2,GL_FLOAT, GL_FALSE, 0, (void*)0);
+    
+    do {
         Mat frame;
         
         capture >> frame;
@@ -149,20 +157,9 @@ int main( void ) {
         glBindTexture(GL_TEXTURE_2D, Texture);
         glUniform1i(TextureID, 0);
         
-        glEnableVertexAttribArray(0);
-        glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
-        
-        // 2nd attribute buffer : UVs
-        glEnableVertexAttribArray(1);
-        glBindBuffer(GL_ARRAY_BUFFER, uvbuffer);
-        glVertexAttribPointer(1, 2,GL_FLOAT, GL_FALSE, 0, (void*)0);
-        
+        glBindVertexArray(VertexArrayID);
         
         glDrawArrays(GL_TRIANGLE_FAN, 0, 4); // 4 indices starting at 0 -> 1 rectangle
-        
-        glDisableVertexAttribArray(0);
-        glDisableVertexAttribArray(1);
         
         ImGui_ImplGlfwGL3_NewFrame();
         
