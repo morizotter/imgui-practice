@@ -49,8 +49,8 @@ int main( void ) {
     }
     
     glfwWindowHint(GLFW_SAMPLES, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // To make MacOS happy; should not be needed
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     
@@ -79,6 +79,7 @@ int main( void ) {
     // Setup ImGui binding
     ImGui_ImplGlfwGL3_Init(window, true);
     bool show_another_window = false;
+    bool show_test_window = true;
     float slider_f = 0.0;
     
     // Dark blue background
@@ -186,6 +187,7 @@ int main( void ) {
         glDisableVertexAttribArray(0);
         glDisableVertexAttribArray(1);
         
+        
         ImGui_ImplGlfwGL3_NewFrame();
         
         {
@@ -203,6 +205,13 @@ int main( void ) {
             ImGui::Begin("Another Window", &show_another_window);
             ImGui::Text("Hello");
             ImGui::End();
+        }
+        
+        // 3. Show the ImGui test window. Most of the sample code is in ImGui::ShowTestWindow()
+        if (show_test_window)
+        {
+            ImGui::SetNextWindowPos(ImVec2(650, 20), ImGuiSetCond_FirstUseEver);
+            ImGui::ShowTestWindow(&show_test_window);
         }
         
         ImGui::Render();
